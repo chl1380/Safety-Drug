@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:id="@+id/pass_scroll">
+        <LinearLayout
+            android:id="@+id/pass_li"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:textSize="22dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="예상되는 부작용 설명"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="스탠포드 대학교 Decagon 프로젝트 기반 출력 결과입니다.\nDecagon 프로젝트가 궁금하시다면 아래 버튼을 클릭해주세요."
+                android:gravity="center_horizontal"/>
+
+            <Button
+                android:id="@+id/Decagon_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/decagon_btn"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Decagon 프로젝트"
+                app:backgroundTint="@null"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/detail_animation"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:paddingTop="-50dp"
+                android:paddingBottom="-50dp"
+                app:lottie_fileName="detail_display.json"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+
+            <RatingBar
+                android:id="@+id/star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="3"
+                android:stepSize="0.02"
+                android:rating="0"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/side_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_margin="5dp"
+                android:gravity="center_horizontal"
+                android:text="TextView" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/below_animation"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:lottie_fileName="below_animation.json"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                />
+
+            <TextView
+                android:id="@+id/side_pass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_margin="5dp"
+                android:text="TextView"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

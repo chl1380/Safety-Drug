@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    tools:context=".Fragment.FragmentSingleDrug">
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="약 하나만 드셨을 때 부작용도 궁금하시죠?\n아래에 입력해서 검색해주세요!"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <AutoCompleteTextView
+        android:id="@+id/single_drug"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:completionHint="pick an item"
+        android:completionThreshold="1"/>
+
+    <Button
+        android:id="@+id/search_btn"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:text="검색" />
+</LinearLayout>

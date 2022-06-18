@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="문의">
+        <PreferenceScreen
+            android:title="개발자에게 문의하기"
+            android:key="programmer">
+            <intent android:action="android.intent.action.SENDTO"
+                android:data="mailto:tmdwns2595@gmail.com"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="정보">
+        <PreferenceScreen
+            android:title="개인정보처리방침"
+            android:key="privacy">
+            <intent android:targetPackage="org.jjcouple.drug"
+                android:targetClass="org.jjcouple.drug.Setting.PrivacyActivity"/>
+        </PreferenceScreen>
+        <PreferenceScreen
+            android:title="버전 정보"
+            android:key="ver_info" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="도움말">
+        <Preference
+            android:title="자주 묻는 질문"
+            android:key="question"
+            android:icon="@drawable/question">
+            <intent android:targetPackage="org.jjcouple.drug"
+                android:targetClass="org.jjcouple.drug.Setting.QueActivity"/>
+        </Preference>
+    </PreferenceCategory>
+</PreferenceScreen>

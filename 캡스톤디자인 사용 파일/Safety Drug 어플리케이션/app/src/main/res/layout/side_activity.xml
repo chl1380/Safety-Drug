@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_li"
+    android:gravity="center"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/side_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:textSize="28dp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:background="#D5D0D0"
+        android:text="부작용 출력 결과"/>
+
+    <TextView
+        android:id="@+id/side_count"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:background="@drawable/selector_button"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_scroll">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/scroll_li"/>
+    </ScrollView>
+
+</LinearLayout>

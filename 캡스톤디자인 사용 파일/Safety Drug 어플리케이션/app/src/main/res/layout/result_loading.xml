@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/side_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:text="입력하신 약물에 대한 부작용 결과 반환중입니다...\n(최대 1분 가량 소요됩니다.)"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/side_animation"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        app:lottie_fileName="sideeffect_loading.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        />
+
+    <com.github.ybq.android.spinkit.SpinKitView
+        android:id="@+id/side_loading"
+        style="@style/SpinKitView.ThreeBounce"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:foregroundGravity="center"
+        app:SpinKit_Color="#000000"/>
+
+</LinearLayout>

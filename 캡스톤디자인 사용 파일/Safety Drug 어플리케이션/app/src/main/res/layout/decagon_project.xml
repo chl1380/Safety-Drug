@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Decagon 프로젝트란?"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/decagon"/>
+
+            <TextView
+                android:id="@+id/decagon_contents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                android:text="데카곤 프로젝트 접근법은 단백질-단백질 상호작용, 약물-단백질 표적 상호작용 및 약물-약물 상호 작용으로 표현되는 다중 약제 부작용의 다중 모드 그래프를 구성한다. Decagon은 많은 수의 연결 고리 유형이 있는 이러한 다중 모드 그래프를 처리하기 위해 특별히 개발된 프로젝트입니다. "/>
+
+            <LinearLayout
+                android:id="@+id/decagon_git"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#3F51B5"
+                    android:text="Decagon 오픈소스 링크"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/web_link"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/decagon_paper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#3F51B5"
+                    android:text="Decagon 논문 링크"
+                    android:layout_margin="10dp"/>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:background="@drawable/web_link"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
